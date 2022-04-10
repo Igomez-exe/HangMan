@@ -27,7 +27,7 @@ with open("palabras.txt", "r") as datos:
                 print(otros_valores)
             
         no_acertar = False
-        print("si")
+        print("sissiisi")
 
 
     
