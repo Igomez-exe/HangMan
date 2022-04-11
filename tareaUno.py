@@ -39,4 +39,4 @@ with open("palabras.txt", "r") as datos:
     for x in almacenar_x:
         print(x, end = " ")
 
-    print("orueba")
+    print("prueba")
