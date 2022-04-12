@@ -1,16 +1,17 @@
 import random
 
 with open("palabras.txt", "r") as datos:
+    
     valores = []
     
     for linea in datos:
         valores = ((linea.split(",")))
     
-    print(valores)
+    """print(valores)"""
     cantidad_de_palabras = len(valores)
     posicion = random.randrange(0,cantidad_de_palabras)
     print(valores[posicion])
-    otros_valores = valores[posicion]
+    """otros_valores = valores[posicion]"""
 
     almacenar_x = []
     for x in valores[posicion]:
@@ -31,12 +32,12 @@ with open("palabras.txt", "r") as datos:
                 almacenar_x[posicion_letra] = letra
             
             posicion_letra = posicion_letra + 1 
-            
-            
-        no_acertar = False
+        for x in almacenar_x:
+            print(x, end = " ")    
+        print(" ")    
+        posicion_letra = 0 
+        """no_acertar = False"""
 
 
-    for x in almacenar_x:
-        print(x, end = " ")
+    
 
-    print("prueb")
